@@ -1,6 +1,6 @@
-data "aws_availability_zones" "zones" {
-}
-
-data "aws_route53_zone" "zone" {
-  name = "${var.domain}."
+module "ecr" {
+  source = "../modules/ecr"
+  repositories = [
+    "flask"
+  ]
 }
