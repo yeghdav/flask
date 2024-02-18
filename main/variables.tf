@@ -14,3 +14,7 @@ variable "project" {
 variable "eks_version" {
   default = "1.29"
 }
+
+variable "db_name" {
+  default = "db"
+}
